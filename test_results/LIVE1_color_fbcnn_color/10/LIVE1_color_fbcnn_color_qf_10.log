@@ -1,0 +1,21 @@
+21-09-13 03:44:52.951 : --------------- quality factor: 10 ---------------
+21-09-13 03:45:12.512 : Model path: model_zoo/fbcnn_color.pth
+21-09-13 03:45:12.518 : ---1-->  bikes.bmp
+21-09-13 03:45:52.038 : --------------- quality factor: 10 ---------------
+21-09-13 03:45:53.114 : Model path: model_zoo/fbcnn_color.pth
+21-09-13 03:45:53.115 : ---1-->  bikes.bmp
+21-09-13 03:46:08.818 : bikes.bmp - PSNR: 26.39 dB; SSIM: 0.802; PSNRB: 26.12 dB.
+21-09-13 03:46:08.822 : predicted quality factor: 10
+21-09-13 03:46:08.862 : ---2--> building2.bmp
+21-09-13 03:46:22.249 : building2.bmp - PSNR: 23.38 dB; SSIM: 0.759; PSNRB: 22.88 dB.
+21-09-13 03:46:22.249 : predicted quality factor: 10
+21-09-13 03:46:22.281 : ---3--> buildings.bmp
+21-09-13 03:46:39.070 : buildings.bmp - PSNR: 25.99 dB; SSIM: 0.814; PSNRB: 25.51 dB.
+21-09-13 03:46:39.070 : predicted quality factor: 10
+21-09-13 03:46:39.111 : ---4-->   caps.bmp
+21-09-13 03:46:56.712 : caps.bmp - PSNR: 31.66 dB; SSIM: 0.867; PSNRB: 31.62 dB.
+21-09-13 03:46:56.712 : predicted quality factor: 10
+21-09-13 03:46:56.750 : ---5--> carnivaldolls.bmp
+21-09-13 03:47:10.286 : carnivaldolls.bmp - PSNR: 27.85 dB; SSIM: 0.853; PSNRB: 27.85 dB.
+21-09-13 03:47:10.286 : predicted quality factor: 10
+21-09-13 03:47:10.318 : ---6--> cemetry.bmp
