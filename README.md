@@ -1,4 +1,4 @@
-## Towards Flexible Blind JPEG Artifacts Removal (ICCV 2021) (PyTorch)
+## [Towards Flexible Blind JPEG Artifacts Removal (FBCNN, ICCV 2021)](https://github.com/jiaxi-jiang/FBCNN/releases/download/v1.0/FBCNN_ICCV2021.pdf)
 
 [Jiaxi Jiang](https://jiaxi-jiang.github.io/), [Kai Zhang](https://cszn.github.io/), [Radu Timofte](http://people.ee.ethz.ch/~timofter/)
 
@@ -29,7 +29,7 @@ Testing
 python main_test_fbcnn_gray.py
 ```
 
-- Grayscale JPEG images, model trained with double JPEG degradation model
+- Grayscale JPEG images, trained with double JPEG degradation model
 ```bash
 python main_test_fbcnn_gray_doublejpeg.py
 ```
