@@ -11,6 +11,8 @@ This repository is the official PyTorch implementation of paper "Towards Flexibl
 - Double JPEG Images (Aligned/Non-Aligned)
 - Real-World JPEG images
 
+To the best of our knowledge, we are the first to tackle the problem of restoration of non-aligned double JPEG compression, where existing blind methods always fail. As JPEG is the most widely used image compression algorithm and format, and most real-world JPEG images are compressed many times, we believe it would be a significant step towards real image restoration. 
+
 ✨ _**Some visual examples (click for full images)**_:
 
 [<img src="figs/v1_.png" width="400px"/>](https://imgsli.com/NzA3NTk)
@@ -107,7 +109,6 @@ Besides, to get a fully blind model, we propose two blind solutions to solve thi
 
 By reducing the misalignment of training data and real-world JPEG images, FBCNN-A further improves the results on complex double JPEG restoration. _**This proposed double JPEG degradation model can be easily integrated into other image restoration tasks, such as Single Image Super-Resolution, for better general real image restoration.**_
 
-To the best of our knowledge, we are the first to tackle the problem of restoration of non-aligned double JPEG compression. As JPEG is the most widely used image compression algorithm and format, and most real-world JPEG images are compressed many times, we believe it would be a significant step towards real image restoration. 
 
 Experiments
 ----------
