@@ -5,6 +5,12 @@
 *[Computer Vision Lab](https://vision.ee.ethz.ch/the-institute.html), ETH Zurich, Switzerland*
 
 ________
+This repository is the official PyTorch implementation of paper "Towards Flexible Blind JPEG Artifacts Removal"
+([Paper](https://github.com/jiaxi-jiang/FBCNN/releases/download/v1.0/FBCNN_ICCV2021.pdf)). FBCNN achieves **state-of-the-art performance** in blind JPEG artifacts removal on
+- Single JPEG Images (Color/Grayscale)
+- Double JPEG Images (Aligned/Non-Aligned)
+- Real-World JPEG images
+
 ✨ _**Some visual examples (click for full images)**_:
 
 [<img src="figs/v1_.png" width="400px"/>](https://imgsli.com/NzA3NTk)
