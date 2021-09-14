@@ -29,6 +29,15 @@ def main():
 
             model_pool = 'model_zoo'  # fixed
             model_path = os.path.join(model_pool, model_name)
+            if os.path.exists(model_path):
+                print(f'loading model from {model_path}')
+            else:
+                os.makedirs(os.path.dirname(model_path), exist_ok=True)
+                url = 'https://github.com/jiaxi-jiang/FBCNN/releases/download/v1.0/{}'.format(os.path.basename(model_path))
+                r = requests.get(url, allow_redirects=True)
+                print(f'downloading model {model_path}')
+                open(model_path, 'wb').write(r.content)
+            
             logger_name = result_name + '_qf_' + str(qf1)+str(qf2)
             utils_logger.logger_info(logger_name, log_path=os.path.join(E_path, logger_name+'.log'))
             logger = logging.getLogger(logger_name)
