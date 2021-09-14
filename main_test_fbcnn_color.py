@@ -7,6 +7,7 @@ import torch
 import cv2
 from utils import utils_logger
 from utils import utils_image as util
+import requests
 
 def main():
 
