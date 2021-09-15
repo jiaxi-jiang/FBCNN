@@ -61,7 +61,7 @@ Contents
 * [Analysis of Double JPEG Restoration](#analysis-of-double-jpeg-restoration)
 * [Experiments](#experiments)
 * [Citation](#citation)
-* [Acknowledgement](#acknowledgement)
+* [License and Acknowledgement](#license-and-acknowledgement)
 
 Motivations
 ----------
@@ -150,6 +150,6 @@ Citation
     }
 
 
-Acknowledgement
+License and Acknowledgement
 ----------
-This work was partly supported by the ETH Zürich Fund (OK) and a Huawei Technologies Oy (Finland) project.
+This project is released under the Apache 2.0 license. This work was partly supported by the ETH Zürich Fund (OK) and a Huawei Technologies Oy (Finland) project.
