@@ -83,7 +83,7 @@ We propose a flexible blind convolutional neural network (FBCNN) that predicts t
 
 Analysis of Double JPEG Restoration
 ----------
-####  1. What is non-aligned double JPEG compression?
+###  1. What is non-aligned double JPEG compression?
 
 Non-aligned double JPEG compression means that the 8x8 blocks of two JPEG compression are not aligned. For example, when we crop a JPEG image and save it also as JPEG, it is highly possible we get a non-aligned double JPEG image. 
 ![real](https://github.com/jiaxi-jiang/FBCNN/blob/main/figs/doraemon.png)
@@ -94,7 +94,7 @@ There are many other common scenarios including, but not limited to:
 - Group different JPEG image and save it as a single JPEG image.
 - Most memes are compressed many times with non-aligned cases.
 
-####  2. Limitation of existing blind methods on restoration of non-aligned double JPEG images
+###  2. Limitation of existing blind methods on restoration of non-aligned double JPEG images
 
 We find that existing blind methods always do not work when the 8x8 blocks of two JPEG compression are not aligned and QF1 <= QF2, _**even with just a one-pixel shift.**_ Other cases such as non-aligned double JPEG with QF1>QF2, or aligned double JPEG compression, are actually equivalent to single JPEG compression.
 
@@ -102,7 +102,7 @@ Here is an example of the restoration result of DnCNN and QGAC on a JPEG image w
 ![lena_doublejpeg](https://github.com/jiaxi-jiang/FBCNN/blob/main/figs/lena_doublejpeg.png)
 
 
-####  3. Our solutions
+###  3. Our solutions
 We find for non-aligned double JPEG images with QF1 < QF2, FBCNN always predicts the quality factor as QF2. However, it is the smaller QF1 that dominants the compression artifacts. By manually changing the predicted quality factor to QF1, we largely improve the result.
 
 Besides, to get a fully blind model, we propose two blind solutions to solve this problem:
@@ -121,20 +121,20 @@ By reducing the misalignment of training data and real-world JPEG images, FBCNN-
 Experiments
 ----------
 
-#### 1. Single JPEG restoration
+### 1. Single JPEG restoration
 ![single_table](https://github.com/jiaxi-jiang/FBCNN/blob/main/figs/single_table.png)
 *: Train a specific model for each quality factor.
 ![single_compare](https://github.com/jiaxi-jiang/FBCNN/blob/main/figs/single_compare.png)
 
-#### 2. Non-aligned double JPEG restoration
+### 2. Non-aligned double JPEG restoration
 There is a pixel shift of (4,4) between the blocks of two JPEG compression.
 ![double_table](https://github.com/jiaxi-jiang/FBCNN/blob/main/figs/double_table.png)
 ![double_compare](https://github.com/jiaxi-jiang/FBCNN/blob/main/figs/double_compare.png)
 
-#### 3. Real-world JPEG restoration
+### 3. Real-world JPEG restoration
 ![real](https://github.com/jiaxi-jiang/FBCNN/blob/main/figs/real.png)
 
-#### 4. Flexibility of FBCNN
+### 4. Flexibility of FBCNN
 By setting different quality factors, we can control the trade-off between artifacts removal and details preservation.
 ![flexible](https://github.com/jiaxi-jiang/FBCNN/blob/main/figs/flexible.png)
 
