@@ -61,6 +61,7 @@ Contents
 * [Network Architecture](#network-architecture)
 * [Analysis of Double JPEG Restoration](#analysis-of-double-jpeg-restoration)
 * [Experiments](#experiments)
+* [Boader Impact](#boader-impact)
 * [Citation](#citation)
 * [Acknowledgement](#acknowledgement)
 
@@ -94,6 +95,7 @@ Other common scenarios include:
 - Edit a JPEG image which introduces crop, rotation, or resize, and save as JPEG.
 - Zoom in/out a JPEG image, then take a screenshot, save as JPEG.
 - Group different JPEG image and save as a single JPEG image.
+- Most memes are compressed many times with non-aligned cases.
 
 ####  2. Limitation of existing blind methods on restoration of non-aligned double JPEG images
 
@@ -139,6 +141,9 @@ There is a pixel shift of (4,4) between the blocks of two JPEG compression.
 By setting different quality factors, we can control the trade-off between artifacts removal and details preservation.
 ![flexible](https://github.com/jiaxi-jiang/FBCNN/blob/main/figs/flexible.png)
 
+Boader Impact
+----------
+While our proposed methods provide a more general solution to JPEG artifacts removal, negative consequences can still arise, as our targeted double JPEG image artifacts are usually important clues for tampering detection in image forensics. After restoration, double JPEG artifacts are removed, which could cause misjudgment and misleading information in double JPEG or image tampering detection. Therefore, we must emphasize that our methods are absolutely forbidden to be used in illegal matters. On the other hand, we believe our research can in turn promote the further development of image forensics.
 
 Citation
 ----------
