@@ -11,7 +11,7 @@ This repository is the official PyTorch implementation of paper "Towards Flexibl
 - Double JPEG images (aligned/non-aligned)
 - Real-world JPEG images
 
-To the best of our knowledge, we are the first to tackle the problem of restoration of non-aligned double JPEG compression, where existing blind methods always fail. As JPEG is the most widely used image compression algorithm and format, and most real-world JPEG images are compressed many times, we believe it would be a significant step towards real image restoration. 
+To the best of our knowledge, we are the first to tackle the problem of restoration of non-aligned double JPEG compression, where existing blind methods always fail. As JPEG is the most widely used image compression algorithm and image format, and most real-world JPEG images are compressed many times, we believe our methods, **especially the proposed double JPEG degradation model**, would be a significant step towards real image restoration. 
 
 ✨ _**Some visual examples (click for full images)**_:
 
@@ -90,11 +90,11 @@ Analysis of Double JPEG Restoration
 
 Non-aligned double JPEG compression means that the 8x8 blocks of two JPEG compression are not aligned. For example, when we crop a JPEG image and save it also as JPEG, it is highly possible we get a non-aligned double JPEG image. 
 ![real](https://github.com/jiaxi-jiang/FBCNN/blob/main/figs/doraemon.png)
-Other common scenarios include:
+There are many other common scenarios including, but not limited to:
 - take a picture by smartphone and upload it online. Most social media platforms, e.g. Wechat, Twitter, Facebook, resize the uploaded images by downsampling and then apply JPEG compression to save storage space.
-- Edit a JPEG image which introduces crop, rotation, or resize, and save as JPEG.
-- Zoom in/out a JPEG image, then take a screenshot, save as JPEG.
-- Group different JPEG image and save as a single JPEG image.
+- Edit a JPEG image that introduces cropping, rotation, or resizing, and save it as JPEG.
+- Zoom in/out a JPEG image, then take a screenshot, save it as JPEG.
+- Group different JPEG image and save it as a single JPEG image.
 - Most memes are compressed many times with non-aligned cases.
 
 ####  2. Limitation of existing blind methods on restoration of non-aligned double JPEG images
