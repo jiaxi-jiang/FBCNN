@@ -15,12 +15,10 @@ This repository is the official PyTorch implementation of paper "Towards Flexibl
 
 ✨ _**Some visual examples (click for full images)**_:
 
-[<img src="figs/v1_.png" width="400px"/>](https://imgsli.com/NzA3NTk)
-[<img src="figs/v3_.png" width="400px"/>](https://imgsli.com/NzA3NjI)
-[<img src="figs/v2_.png" width="400px"/>](https://imgsli.com/NzA3NjE)
-[<img src="figs/v4_.png" width="400px"/>](https://imgsli.com/NzA3NjM)
-[<img src="figs/v5_.png" width="400px"/>](https://imgsli.com/NzA3NjQ)
-[<img src="figs/v6_.png" width="400px"/>](https://imgsli.com/NzA3NjU)
+|[<img src="figs/v1_.png" width="400px"/>](https://imgsli.com/NzA3NTk) |[<img src="figs/v3_.png" width="400px"/>](https://imgsli.com/NzA3NjI)|
+|:---:|:---:|
+|[<img src="figs/v2_.png" width="400px"/>](https://imgsli.com/NzA3NjE) |[<img src="figs/v4_.png" width="400px"/>](https://imgsli.com/NzA3NjM)|
+|[<img src="figs/v5_.png" width="400px"/>](https://imgsli.com/NzA3NjQ) |[<img src="figs/v6_.png" width="400px"/>](https://imgsli.com/NzA3NjU)|
 
 ________
 
