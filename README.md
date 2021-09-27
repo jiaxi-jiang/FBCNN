@@ -1,14 +1,17 @@
 ## [Towards Flexible Blind JPEG Artifacts Removal (FBCNN, ICCV 2021)](https://github.com/jiaxi-jiang/FBCNN/releases/download/v1.0/FBCNN_ICCV2021.pdf)
-[![paper download](https://img.shields.io/badge/paper-download-red.svg)](https://github.com/jiaxi-jiang/FBCNN/releases/download/v1.0/FBCNN_ICCV2021.pdf)
+[![download](https://img.shields.io/github/downloads/jiaxi-jiang/FBCNN/total.svg)](https://github.com/jiaxi-jiang/FBCNN/releases)
+[![GitHub Stars](https://img.shields.io/github/stars/jiaxi-jiang/FBCNN?style=social)](https://github.com/jiaxi-jiang/FBCNN)
+[![paper download](https://img.shields.io/badge/paper-pdf-red.svg)](https://github.com/jiaxi-jiang/FBCNN/releases/download/v1.0/FBCNN_ICCV2021.pdf)
 ![python version](https://img.shields.io/badge/python-3.7+-yellow.svg) 
 ![pytorch version](https://img.shields.io/badge/pytorch-1.7-orange.svg) [![License](https://img.shields.io/badge/license-Apache%202-blue.svg)](LICENSE)
+
 
 [Jiaxi Jiang](https://jiaxi-jiang.github.io/), [Kai Zhang](https://cszn.github.io/), [Radu Timofte](http://people.ee.ethz.ch/~timofter/)
 
 *[Computer Vision Lab](https://vision.ee.ethz.ch/), ETH Zurich, Switzerland*
 
 ________
-:fire::fire: This repository is the official PyTorch implementation of paper "Towards Flexible Blind JPEG Artifacts Removal". [![paper download](https://img.shields.io/badge/paper-download-red.svg)](https://github.com/jiaxi-jiang/FBCNN/releases/download/v1.0/FBCNN_ICCV2021.pdf) 
+:fire::fire: This repository is the official PyTorch implementation of paper "Towards Flexible Blind JPEG Artifacts Removal". [![paper download](https://img.shields.io/badge/paper-pdf-red.svg)](https://github.com/jiaxi-jiang/FBCNN/releases/download/v1.0/FBCNN_ICCV2021.pdf) 
 FBCNN achieves **state-of-the-art performance** in blind JPEG artifacts removal on
 - Single JPEG images (color/grayscale)
 - Double JPEG images (aligned/non-aligned)
