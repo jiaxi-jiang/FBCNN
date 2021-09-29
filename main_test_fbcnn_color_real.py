@@ -20,7 +20,7 @@ def main():
     results = 'test_results'     
 
     do_flexible_control = True
-    QF_control = [10,30,50,70,90] # adjust qf as input to provide different results
+    QF_control = [5,10,30,50,70,90] # adjust qf as input to provide different results
 
     result_name = testset_name + '_' + model_name[:-4]
     L_path = os.path.join(testsets, testset_name)
@@ -29,6 +29,15 @@ def main():
 
     model_pool = 'model_zoo'  # fixed
     model_path = os.path.join(model_pool, model_name)
+    if os.path.exists(model_path):
+        print(f'loading model from {model_path}')
+    else:
+        os.makedirs(os.path.dirname(model_path), exist_ok=True)
+        url = 'https://github.com/jiaxi-jiang/FBCNN/releases/download/v1.0/{}'.format(os.path.basename(model_path))
+        r = requests.get(url, allow_redirects=True)
+        print(f'downloading model {model_path}')
+        open(model_path, 'wb').write(r.content)    
+    
     logger_name = result_name
     utils_logger.logger_info(logger_name, log_path=os.path.join(E_path, logger_name+'.log'))
     logger = logging.getLogger(logger_name)
