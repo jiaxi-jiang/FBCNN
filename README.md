@@ -147,13 +147,14 @@ By setting different quality factors, we can control the trade-off between artif
 
 Citation
 ----------
-    @inproceedings{jiang2021towards,
-    title={Towards Flexible Blind {JPEG} Artifacts Removal},
-    author={Jiang, Jiaxi and Zhang, Kai and Timofte, Radu},
-    booktitle={IEEE International Conference on Computer Vision},
-    year={2021}
-    }
 
+    @inproceedings{jiang2021towards,
+      title={Towards Flexible Blind JPEG Artifacts Removal},
+      author={Jiang, Jiaxi and Zhang, Kai and Timofte, Radu},
+      booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+      pages={4997--5006},
+      year={2021}
+      }
 
 License and Acknowledgement
 ----------
