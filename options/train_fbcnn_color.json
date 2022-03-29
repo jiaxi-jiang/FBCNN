@@ -1,0 +1,68 @@
+{
+  "task": "FBCNN-Color"  //  root/task/images-models-options
+  , "model": "fbcnn" 
+  , "gpu_ids": [0,1]
+  , "n_channels": 3  // broadcast to "datasets", 1 for grayscale, 3 for color
+  , "merge_bn": false               // BN for DnCNN
+  , "merge_bn_startpoint": 40000000  // merge BN after N iterations
+  , "path": {
+    "root": "deblocking"      
+    , "pretrained_netG": null      // path of pretrained model
+  }
+
+  , "datasets": {
+    "train": {
+      "name": "train_dataset"           // just name
+      , "dataset_type": "jpeg"         // "jpeg" | "jpeggray" | "jpeggraydouble"
+      , "dataroot_H": "../trainsets/Data_DIV2K_Flickr2K"// path of original training dataset
+      , "dataroot_L": null            // path of L training dataset
+      , "H_size": 96                  // patch size 40 | 64 | 96 | 128 | 192
+      , "dataloader_shuffle": true
+      , "dataloader_num_workers":16 
+      , "dataloader_batch_size": 128     // batch size 1 | 16 | 32 | 48 | 64 | 128
+    }, "test": {
+      "name": "test_dataset"            // just name
+      , "dataset_type": "jpeg"         // "jpeg" | "jpeggray" | "jpeggraydouble" 
+      , "dataroot_H": "../testsets/Classic5/origin"  // path of H testing dataset
+      , "dataroot_L": "../testsets/Classic5/single/10"              // path of L testing dataset
+    }
+  }
+
+  , "netG": {
+    "net_type": "fbcnn"
+    , "in_nc": 3        // input channel number
+    , "out_nc": 3 // output channel number
+    , "nc": [64, 128, 256, 512] // number of channels
+    , "nb": 4          
+    , "act_mode": "BR"  // "BR" for BN+ReLU | "R" for ReLU
+    , "upsample_mode": "convtranspose"  // "pixelshuffle" | "convtranspose" | "upconv"
+    , "downsample_mode": "strideconv"   // "strideconv" | "avgpool" | "maxpool"
+
+    , "init_type": "orthogonal"         // "orthogonal" | "normal" | "uniform" | "xavier_normal" | "xavier_uniform" | "kaiming_normal" | "kaiming_uniform"
+    , "init_bn_type": "uniform"         // "uniform" | "constant"
+    , "init_gain": 0.2
+  }
+
+  , "train": {
+    "G_lossfn_type": "l1"               // "l1" preferred | "l2sum" | "l2" | "ssim"
+    , "G_lossfn_weight": 1.0            // default
+    , "QF_lossfn_type": "l1"
+    , "QF_lossfn_weight":0.001 //1.0
+
+    , "G_optimizer_type": "adam"        // fixed, adam is enough
+    , "G_optimizer_lr": 2e-5         // learning rate
+    , "G_optimizer_clipgrad": null      // unused
+
+    , "G_scheduler_type": "MultiStepLR" // "MultiStepLR" is enough
+    , "G_scheduler_milestones": [200000, 400000, 1200000, 1600000, 1800000]
+    , "G_scheduler_gamma": 0.5
+
+    , "G_regularizer_orthstep": null    // unused
+    , "G_regularizer_clipstep": null    // unused
+
+    , "checkpoint_test": 2500           // for testing 5000
+    , "checkpoint_save":  5000           // for saving model 5000
+    , "checkpoint_print": 500           // for print
+  }
+}
+
