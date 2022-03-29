@@ -30,8 +30,11 @@ ________
 
 Training
 ----------
-
-We will release the training code at [KAIR](https://github.com/cszn/KAIR/).
+For training, just run the following code:
+```bash
+python main_train_fbcnn.py
+```
+The `.json` configuration file for training is located in `./options/`
 
 Testing
 ----------
