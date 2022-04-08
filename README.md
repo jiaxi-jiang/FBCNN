@@ -11,8 +11,18 @@
 *[Computer Vision Lab](https://vision.ee.ethz.ch/), ETH Zurich, Switzerland*
 
 ________
+[Training](#training), [Testing](#testing)
+
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/towards-flexible-blind-jpeg-artifacts-removal/jpeg-artifact-correction-on-live1-quality-10)](https://paperswithcode.com/sota/jpeg-artifact-correction-on-live1-quality-10?p=towards-flexible-blind-jpeg-artifacts-removal)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/towards-flexible-blind-jpeg-artifacts-removal/jpeg-artifact-correction-on-live1-quality-10-1)](https://paperswithcode.com/sota/jpeg-artifact-correction-on-live1-quality-10-1?p=towards-flexible-blind-jpeg-artifacts-removal)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/towards-flexible-blind-jpeg-artifacts-removal/jpeg-artifact-correction-on-bsds500-quality)](https://paperswithcode.com/sota/jpeg-artifact-correction-on-bsds500-quality?p=towards-flexible-blind-jpeg-artifacts-removal)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/towards-flexible-blind-jpeg-artifacts-removal/jpeg-artifact-correction-on-bsds500-quality-3)](https://paperswithcode.com/sota/jpeg-artifact-correction-on-bsds500-quality-3?p=towards-flexible-blind-jpeg-artifacts-removal)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/towards-flexible-blind-jpeg-artifacts-removal/jpeg-artifact-correction-on-classic5-quality)](https://paperswithcode.com/sota/jpeg-artifact-correction-on-classic5-quality?p=towards-flexible-blind-jpeg-artifacts-removal)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/towards-flexible-blind-jpeg-artifacts-removal/jpeg-artifact-correction-on-icb-quality-10)](https://paperswithcode.com/sota/jpeg-artifact-correction-on-icb-quality-10?p=towards-flexible-blind-jpeg-artifacts-removal)
+
+
 :fire::fire: This repository is the official PyTorch implementation of paper "Towards Flexible Blind JPEG Artifacts Removal". [![paper download](https://img.shields.io/badge/arxiv-paper-red.svg)](https://arxiv.org/abs/2109.14573)
-FBCNN achieves **state-of-the-art performance** in blind JPEG artifacts removal on
+FBCNN achieves **state-of-the-art performance** in **BLIND** JPEG artifacts removal on
 - Single JPEG images (color/grayscale)
 - Double JPEG images (aligned/non-aligned)
 - Real-world JPEG images
