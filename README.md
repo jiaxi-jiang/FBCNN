@@ -13,14 +13,7 @@
 ________
 [Training](#training), [Testing](#testing)
 
-:sunny::sunny:**Try your own JPEG images in a second!**  Click on [Gradio Web Demo](https://huggingface.co/spaces/danielsapit/JPEG_Artifacts_Removal), that integrates our model to [Huggingface Spaces](https://huggingface.co/spaces) with [Gradio](https://github.com/gradio-app/gradio).
-
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/towards-flexible-blind-jpeg-artifacts-removal/jpeg-artifact-correction-on-live1-quality-10)](https://paperswithcode.com/sota/jpeg-artifact-correction-on-live1-quality-10?p=towards-flexible-blind-jpeg-artifacts-removal)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/towards-flexible-blind-jpeg-artifacts-removal/jpeg-artifact-correction-on-live1-quality-10-1)](https://paperswithcode.com/sota/jpeg-artifact-correction-on-live1-quality-10-1?p=towards-flexible-blind-jpeg-artifacts-removal)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/towards-flexible-blind-jpeg-artifacts-removal/jpeg-artifact-correction-on-bsds500-quality)](https://paperswithcode.com/sota/jpeg-artifact-correction-on-bsds500-quality?p=towards-flexible-blind-jpeg-artifacts-removal)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/towards-flexible-blind-jpeg-artifacts-removal/jpeg-artifact-correction-on-bsds500-quality-3)](https://paperswithcode.com/sota/jpeg-artifact-correction-on-bsds500-quality-3?p=towards-flexible-blind-jpeg-artifacts-removal)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/towards-flexible-blind-jpeg-artifacts-removal/jpeg-artifact-correction-on-classic5-quality)](https://paperswithcode.com/sota/jpeg-artifact-correction-on-classic5-quality?p=towards-flexible-blind-jpeg-artifacts-removal)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/towards-flexible-blind-jpeg-artifacts-removal/jpeg-artifact-correction-on-icb-quality-10)](https://paperswithcode.com/sota/jpeg-artifact-correction-on-icb-quality-10?p=towards-flexible-blind-jpeg-artifacts-removal)
+:sunny::sunny:**Try your own JPEG images in a second by clicking on [Gradio Web Demo](https://huggingface.co/spaces/danielsapit/JPEG_Artifacts_Removal)!** Our model is integrated to [Huggingface Spaces](https://huggingface.co/spaces) with [Gradio](https://github.com/gradio-app/gradio).
 
 
 :fire::fire: This repository is the official PyTorch implementation of paper "Towards Flexible Blind JPEG Artifacts Removal". [![paper download](https://img.shields.io/badge/arxiv-paper-red.svg)](https://arxiv.org/abs/2109.14573)
@@ -28,6 +21,14 @@ FBCNN achieves **state-of-the-art performance** in **BLIND** JPEG artifacts remo
 - Single JPEG images (color/grayscale)
 - Double JPEG images (aligned/non-aligned)
 - Real-world JPEG images
+
+
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/towards-flexible-blind-jpeg-artifacts-removal/jpeg-artifact-correction-on-live1-quality-10)](https://paperswithcode.com/sota/jpeg-artifact-correction-on-live1-quality-10?p=towards-flexible-blind-jpeg-artifacts-removal)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/towards-flexible-blind-jpeg-artifacts-removal/jpeg-artifact-correction-on-live1-quality-10-1)](https://paperswithcode.com/sota/jpeg-artifact-correction-on-live1-quality-10-1?p=towards-flexible-blind-jpeg-artifacts-removal)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/towards-flexible-blind-jpeg-artifacts-removal/jpeg-artifact-correction-on-bsds500-quality)](https://paperswithcode.com/sota/jpeg-artifact-correction-on-bsds500-quality?p=towards-flexible-blind-jpeg-artifacts-removal)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/towards-flexible-blind-jpeg-artifacts-removal/jpeg-artifact-correction-on-bsds500-quality-3)](https://paperswithcode.com/sota/jpeg-artifact-correction-on-bsds500-quality-3?p=towards-flexible-blind-jpeg-artifacts-removal)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/towards-flexible-blind-jpeg-artifacts-removal/jpeg-artifact-correction-on-classic5-quality)](https://paperswithcode.com/sota/jpeg-artifact-correction-on-classic5-quality?p=towards-flexible-blind-jpeg-artifacts-removal)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/towards-flexible-blind-jpeg-artifacts-removal/jpeg-artifact-correction-on-icb-quality-10)](https://paperswithcode.com/sota/jpeg-artifact-correction-on-icb-quality-10?p=towards-flexible-blind-jpeg-artifacts-removal)
 
 >Training a single deep blind model to handle different quality factors for JPEG image artifacts removal has been attracting considerable attention due to its convenience for practical usage. However, existing deep blind methods usually directly reconstruct the image without predicting the quality factor, thus lacking the flexibility to control the output as the non-blind methods. To remedy this problem, in this paper, we propose a flexible blind convolutional neural network, namely FBCNN, that can predict the adjustable quality factor to control the trade-off between artifacts removal and details preservation. Specifically, FBCNN decouples the quality factor from the JPEG image via a decoupler module and then embeds the predicted quality factor into the subsequent reconstructor module through a quality factor attention block for flexible control. Besides, we find existing methods are prone to fail on non-aligned double JPEG images even with only a one-pixel shift, and we thus propose a double JPEG degradation model to augment the training data. Extensive experiments on single JPEG images, more general double JPEG images, and real-world JPEG images demonstrate that our proposed FBCNN achieves favorable performance against state-of-the-art methods in terms of both quantitative metrics and visual quality.
 
