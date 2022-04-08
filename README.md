@@ -8,10 +8,12 @@
 
 [Jiaxi Jiang](https://jiaxi-jiang.github.io/), [Kai Zhang](https://cszn.github.io/), [Radu Timofte](http://people.ee.ethz.ch/~timofter/)
 
-*[Computer Vision Lab](https://vision.ee.ethz.ch/), ETH Zurich, Switzerland*
+*[Computer Vision Lab](https://vision.ee.ethz.ch/), [ETH Zurich, Switzerland](https://ethz.ch/en.html)*
 
 ________
 [Training](#training), [Testing](#testing)
+
+:sunny::sunny:**Try your own JPEG images in a second!**  Click on [Gradio Web Demo](https://huggingface.co/spaces/danielsapit/JPEG_Artifacts_Removal), that integrates our model to [Huggingface Spaces](https://huggingface.co/spaces) with [Gradio](https://github.com/gradio-app/gradio).
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/towards-flexible-blind-jpeg-artifacts-removal/jpeg-artifact-correction-on-live1-quality-10)](https://paperswithcode.com/sota/jpeg-artifact-correction-on-live1-quality-10?p=towards-flexible-blind-jpeg-artifacts-removal)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/towards-flexible-blind-jpeg-artifacts-removal/jpeg-artifact-correction-on-live1-quality-10-1)](https://paperswithcode.com/sota/jpeg-artifact-correction-on-live1-quality-10-1?p=towards-flexible-blind-jpeg-artifacts-removal)
